@@ -1,0 +1,41 @@
+{% extends 'main/base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block title %}
+  {{ title }} 
+{% endblock %}
+
+{% block content %}
+<!-- <div class="alert alert-warning" style="display: inline-block; vertical-align: top ;">
+  {% if messages %}
+   {% for message in messages %}
+     <div class="alert alert-warning">
+       <strong>{{message}}</strong>
+     </div>
+   {% endfor %}
+ {% endif %}
+</div> -->
+
+<div class="alert alert-warning" style="display: inline-block; vertical-align: middle; width: 500px; margin: 30px ;">
+    {% for i in list %}
+    <div>
+    <b>{{i.title}}</b>
+      <hr/>
+      {{i.date}}
+      <hr/>
+      {{i.details}}
+    </div>
+    {% endfor%}
+</div>
+
+    <div style="display: inline-block; vertical-align: middle; width: 500px; margin: 20px" class= "submit_form">
+      <form  method="POST">
+        {% csrf_token %}
+        {{forms|crispy}}
+        <br>
+        <input type="submit" class="btn btn-warning" value="submit" />
+      </form>
+    </div>
+
+{% endblock %}

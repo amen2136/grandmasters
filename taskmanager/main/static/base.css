@@ -1,0 +1,51 @@
+html,body{
+    height: 100%;
+    line-height: 1;
+}
+
+body{
+    color: brown;
+}
+
+.wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main{
+    flex: 1 1 auto;
+}
+.header{
+
+}
+.header_container{
+    display: flex;
+}
+.header_logo{}
+
+.header_menu{
+    flex: 1 1 auto;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu_list{}
+
+.menu_item{}
+
+.menu_link{}
+
+.header_button{
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 252px;
+}
+.login{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 10pz;
+    line-height: 12px;
+    letter-spacing: 1px;
+}

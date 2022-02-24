@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'base.css'%} ">
+</head>
+<body>
+  <!-- <div class="d-inline-block flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 100vh;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">Navigation</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="{% url 'home' %}" class="nav-link text-white">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'new_s' %} " class="nav-link text-white">
+          News
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'info' %}" class="nav-link text-white">
+          About us
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'todo' %}" class="nav-link text-white">
+          To do list
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'form' %}" class="btn btn-primary">Add form
+          <!-- <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg> -->
+        <!-- </a>
+      </li>
+    </ul>
+    <hr>
+  </div> --> 
+  <div class="wrapper">
+    <header class="header">
+      <div class="header_container">
+        <a href="" class="header_logo">IDGF</a>
+        <nav class="header_menu menu">
+          <ul class="menu_list">
+            <li class="menu_item"><a href="" class="menu_link">HOME</a></li>
+            <li class="menu_item"><a href="" class="menu_link">WHY IDGF</a></li>
+            <li class="menu_item"><a href="" class="menu_link">FEATURES</a></li>
+            <li class="menu_item"><a href="" class="menu_link">cONTACT US</a></li>
+          </ul>
+        </nav>
+        <div class="header_button">
+          <a href="" class="header_button login">LOG IN</a>
+          <a href="" class="header_button signup">SIGN UP</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+      Footer
+    </footer>
+  </div>
+  
+
+         
+
+
+</body>
+</html>
