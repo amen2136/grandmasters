@@ -1,0 +1,132 @@
+html,body{
+    height: 100%;
+    line-height: 1;
+}
+li{
+    list-style: none;
+}
+
+.wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    text-decoration: none;
+}
+.main{
+    flex: 1 1 auto;
+}
+[class*="__container"]{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+}
+.header__container{
+    display: flex;
+    min-height: 114px;
+    align-items: center;
+}
+.header_logo{  
+    display: flex;  
+}
+.logo_img{
+    display: flex;
+    width: 50%;
+    object-fit:contain;    
+}
+.header_menu{
+    flex: 1 1 auto;
+}
+.header_button{
+    flex: 0 0 252px;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;  
+}
+.menu_list{
+    display: flex;
+}
+.menu_item{
+    margin: 0px 40px 0px 40px;
+}
+
+.menu_link{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
+    color: black;
+    letter-spacing: 1px;
+}
+.login, .signup{
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 5px;
+    background-color: #9ceeaa;
+    transition: background-color 0.3s ease 0s;
+    margin-right: 5px;
+}
+.login:hover, .signup:hover{
+    background-color:rgb(20, 46, 18);
+}
+.office{
+    position: absolute;
+    top: 15%;
+    opacity: 0.5;
+    width: 1505px;
+    height: 600px;
+}
+.wave{
+    position: absolute;
+    top: 65%;
+}
+.contactinfo1{
+    display: inline;
+    font-size: 200%;
+    margin: 13%;
+    color: rgb(20, 14, 56);
+    z-index: 5;
+    font-family: 'Patua One', cursive; 
+    text-align: center;   
+}
+.heart{
+    width: 9%;
+    position: absolute;
+    z-index: 50;
+    top: 70%;
+    right: 10%;
+}
+.contactinfo2{
+    margin-top: 10%;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    color: rgb(20, 14, 56);
+    width: 50%;
+    margin-left: 25%;
+}   
+.email_link{
+    font-family: 'Hubballi', cursive;
+}
+h1{
+    font-size: 200%;
+    font-family: 'Patua One', cursive; 
+}
